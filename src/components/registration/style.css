@@ -1,0 +1,74 @@
+.registration {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.registration h1 {
+    grid-column-start: 2;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #4e6376; 
+}
+
+.whiteBox {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding: 50px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #d5d4d9, #fefdff);;
+    box-shadow:  5px 5px 10px #c9c9cd,
+             -5px -5px 10px #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 20px;
+}
+
+.fields label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.fields input {
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 50px;
+    background: #4e6376;
+    box-shadow: inset 9px 9px 18px #34424f,
+                inset -9px -9px 18px #68849d;
+}
+
+.fields input:focus-visible {
+    outline:none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    min-width: 45% !important;
+    text-transform: uppercase;
+    color: #4e6376;
+    font-size: 20px;
+    align-self: center;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ffffff, #e2e2e2);
+    box-shadow:  6px 6px 12px #d5d5d5,
+                 -6px -6px 12px #ffffff;
+}
+
+button:hover {
+    border-radius: 50px;
+    background: #fbfbfb;
+    box-shadow:  6px 6px 12px #d5d5d5,
+                -6px -6px 12px #ffffff;
+}
